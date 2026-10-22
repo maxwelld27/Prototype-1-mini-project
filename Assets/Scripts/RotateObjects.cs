@@ -16,5 +16,6 @@ public class RotateObjects : MonoBehaviour
     void Update()
     {
         transform.Rotate(Vector3.left);
+        
     }
 }

@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RotateObjects : MonoBehaviour
+public class MoveObjects : MonoBehaviour
 {
-    public float horizontalInput;
-    public float rotateSpeed;
+    public float forwardInput;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +15,6 @@ public class RotateObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.left);
+        transform.Translate(Vector3.back * Time.deltaTime * forwardInput);
     }
 }
